@@ -1,0 +1,112 @@
+*,*::after,*::before{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container{
+  margin: 0 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.blue{
+  color: #4DC4C0;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.hwrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 1em .5em 2em .5em;
+  border-bottom: 2px solid black;
+}
+
+.head{
+  margin-right: auto;
+}
+.container ul{
+  display: block;
+  float: right;
+}
+
+li span,li a{
+  color: black;
+}
+
+/* head section ends here */
+
+
+.middle{
+  margin-top: 1em;
+  padding: .5em;
+  background-color: #EFEFEF;
+  display: flex;
+  flex-direction: row;
+}
+
+.middle section{
+  width: 65%;
+}
+aside{
+  margin-left: 1em;
+  width: 35%;
+  right;
+}
+
+section > h3{
+  border-bottom: 2px solid black;
+}
+
+.n{
+  border-bottom: 2px solid #000;
+}
+
+aside h3:not(.n){
+  margin-top: 1em;
+  border-bottom: 2px solid #B5B5B5;
+}
+
+.catlogue{
+  display: flex;
+  flex-direction: row;
+  border-right: white .5em solid;
+  border-bottom: white .5em solid;
+}
+
+.catlogue h3{
+  display: block;
+  padding: .5em 1em .5em 1em;
+  margin-right: 1em;
+  border-right: black solid 2px;
+
+  line-height: 75px;
+}
+
+.details{
+  display: block;
+  padding: 1em;
+  height: 100%;
+}
+
+aside ~ h3 + p{
+  border-bottom: 2px solid #000;
+}
+
+.differentblue{
+  color: #97D0EC;
+  padding: 1em 0;
+}
+
+p[class="blue"]{
+  padding: 1em 0;
+}
+
+.tp{
+  margin-top:1em;
+}
